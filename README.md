@@ -2,21 +2,24 @@
   <img src="architecture.png" width="900"/>
 </p>
 
-# 🚀 Kafka File Processing Pipeline
+<h1 align="center">🚀 Kafka File Processing Pipeline</h1>
 
-> Event-driven microservices architecture using Apache Kafka & Spring Boot
-
-## 🔍 Keywords
-
-Apache Kafka, Spring Boot Kafka, Kafka Producer Consumer, Event Driven Architecture, Microservices, File Processing Pipeline
-
----
+<p align="center">
+  A production-style event-driven microservices pipeline using Apache Kafka & Spring Boot
+</p>
 <p align="center">
   <img src="https://img.shields.io/badge/Java-17-blue"/>
   <img src="https://img.shields.io/badge/SpringBoot-3.x-green"/>
   <img src="https://img.shields.io/badge/Kafka-EventDriven-orange"/>
   <img src="https://img.shields.io/badge/Docker-Enabled-blue"/>
 </p>
+
+## 🔍 Keywords
+
+Apache Kafka, Spring Boot Kafka, Kafka Producer Consumer, Event Driven Architecture, Microservices, File Processing Pipeline
+
+---
+
 
 ## 📖 Overview
 
@@ -74,13 +77,19 @@ kafka-file-processing/
 
 ## 🚀 Getting Started
 
-### Start Kafka
+### Start Kafka & ZooKeeper
+
+```bash
 docker compose up -d
+```
 
 ### Run Services
 cd upload-service && mvn spring-boot:run  
 cd processing-service && mvn spring-boot:run  
 cd notification-service && mvn spring-boot:run  
+
+### Test API
+POST http://localhost:8080/files/upload
 
 ---
 
@@ -102,9 +111,7 @@ cd notification-service && mvn spring-boot:run
 ---
 
 ### ⚙️ Processing Service (Consumer + Producer)
-<p align="center">
-  <img src="processing-service.png" width="900"/>
-</p>
+<p align="center"> <img src="processing-service.png" width="900"/> </p> <p align="center"> Consumes messages from <code>file_uploaded</code>, processes file, and publishes to <code>file_processed</code> or <code>file_failed</code> </p>
 
 ---
 
@@ -120,8 +127,11 @@ cd notification-service && mvn spring-boot:run
   <img src="postman.png" width="900"/>
 </p>
 
-### ⚙️ Processing Service (Consumer + Producer)
-Consumes messages from `file_uploaded`, processes file, and publishes to `file_processed` or `file_failed`
+# 🎯 Key Learnings
+1. Built Kafka Producer & Consumer services
+2. Implemented event-driven microservices architecture
+3. Learned asynchronous communication using Kafka topics
+4. Designed loosely coupled distributed systems
 
 ## 👨‍💻 Author
 
