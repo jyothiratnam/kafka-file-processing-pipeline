@@ -2,6 +2,10 @@
 
 > Event-driven microservices architecture using Apache Kafka & Spring Boot
 
+## 🔍 Keywords
+
+Apache Kafka, Spring Boot Kafka, Kafka Producer Consumer, Event Driven Architecture, Microservices, File Processing Pipeline
+
 ---
 
 ## 📖 Overview
