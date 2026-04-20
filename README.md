@@ -18,18 +18,17 @@ This project demonstrates a **real-world event-driven architecture** where multi
 
 ## 🧠 Architecture (Event Flow)
 
-Client
-   ↓
-Upload Service (8080)
-   ↓
-Kafka Topic: file_uploaded
-   ↓
-Processing Service (8081)
-   ↓
-Kafka Topic: file_processed / file_failed
-   ↓
-Notification Service (8082)
-
+Client  
+↓  
+Upload Service (8080)  
+↓  
+Kafka Topic: file_uploaded  
+↓  
+Processing Service (8081)  
+↓  
+Kafka Topic: file_processed / file_failed  
+↓  
+Notification Service (8082)  
 ---
 
 ## 📂 Project Structure
