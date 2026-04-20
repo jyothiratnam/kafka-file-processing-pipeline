@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="architecture.png" width="900"/>
+</p>
+
 # 🚀 Kafka File Processing Pipeline
 
 > Event-driven microservices architecture using Apache Kafka & Spring Boot
@@ -11,12 +15,6 @@ Apache Kafka, Spring Boot Kafka, Kafka Producer Consumer, Event Driven Architect
 ## 📖 Overview
 
 This project demonstrates a **real-world event-driven architecture** where multiple microservices communicate asynchronously using **Apache Kafka**.
-
----
-
-## 🧠 Architecture Diagram
-
-![Architecture Diagram](architecture.png)
 
 ---
 
